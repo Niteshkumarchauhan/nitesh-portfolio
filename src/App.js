@@ -8,6 +8,42 @@ import Technology from "./images/technology.png";
 import Mobile from "./images/mobile.png";
 import Ageas from "./images/ageas.png";
 export default function App() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "./images/Nitesh_Resume.pdf";
+    link.download = "niteshCV.pdf";
+    link.click();
+  };
+  const skills = [
+    { name: "Git" },
+    { name: "Quick learning" },
+    { name: "Punctual" },
+    { name: "Wordpress" },
+    { name: "Teamwork" },
+    { name: "GitHub" },
+  ];
+  const events = [
+    {
+      year: "2012",
+      description:
+        "Completed my hight school S.D.S. Inter college, varanasi. My specialization is Science",
+    },
+    {
+      year: "201",
+      description:
+        "Completed my hight school S.B.S. Inter college, varanasi. My specialization is Mathematics.",
+    },
+    {
+      year: "2021",
+      description:
+        "Graduated in KIOT(Krishna Institute Of Technology, Kanpur) and my branch is Mechnical Engineering.",
+    },
+    {
+      year: "2022",
+      description:
+        "Worked out in which field I want to build a developer's career and started to learn Frontend Development.",
+    },
+  ];
   return (
     <div className=" bg-black" style={{ width: "100%" }}>
       <div className="m-auto text-white" style={{ width: "80%" }}>
@@ -27,8 +63,18 @@ export default function App() {
             className="flex justify-around item-center my-3"
             style={{ width: "10%" }}
           >
-            <img src={facebook} alt="Selected" className="w-5 h-5 " />
-            <img src={linkedin} alt="Selected" className="w-5 h-5 " />
+            <a
+              class="font-medium text-blue-600 hover:underline"
+              href="https://www.linkedin.com/in/nitesh-kumar-chauhan-8a92941b2/"
+            >
+              <img src={linkedin} alt="Facebook" className="w-5 h-5" />
+            </a>
+            <a
+              class="font-medium text-blue-600 hover:underline"
+              href="https://www.facebook.com/nitesh.chauhan.3517"
+            >
+              <img src={facebook} alt="Facebook" className="w-5 h-5" />
+            </a>
           </div>
         </div>
         <div className="flex justify-between my-32">
@@ -48,7 +94,11 @@ export default function App() {
               <br /> by a deep dive into HTML, CSS, and JavaScript, with a
               focused <br /> effort on mastering React.js.
             </p>
-            <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500  focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            <button
+              onClick={handleDownload}
+              type="button"
+              className="text-white bg-gradient-to-r from-cyan-500 to-blue-500  focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
               Download CV
             </button>
           </div>
@@ -61,87 +111,96 @@ export default function App() {
           </div>
         </div>
         <h1 className="text-4xl font-extrabold dark:text-white mb-8">
-          Projects
+          Projects (1.5 Years Experiance)
         </h1>
         <div className="grid grid-cols-2 gap-4 place-items-center my-20">
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
-            <img
-              src={LandingPage}
-              alt="Selected"
-              className="w-600 h-72"
-            />
+            <img src={LandingPage} alt="Selected" className="w-600 h-72" />
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-              Furniture store landing page
+              Mantra Labs landing page
             </h2>
             <p className="mb-3 font-normal text-white-700 dark:text-gray-400">
-              Responsive HTML/CSS layout for online furniture store. HTML5, CSS3
-              (SCSS)
+              Spearheaded the development of the complete front-end interface
+              for the official website (www.mantralabsglobal.com), employing
+              modern web technologies including HTML5, CSS3, JavaScript, and
+              React.js.
             </p>
             <button
               type="button"
               class="text-white bg-gradient-to-r from-cyan-500 to-blue-500  focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
-              Live preview
+              <a
+                class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+                href="https://www.mantralabsglobal.com/"
+              >
+                Live preview
+              </a>
             </button>
           </div>
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
-            <img
-              src={Technology}
-              alt="Selected"
-              className="w-600 h-72"
-            />
+            <img src={Technology} alt="Selected" className="w-600 h-72" />
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-              Designer furniture store landing page
+              Mantra Labs Technology page
             </h2>
             <p className="mb-3 font-normal text-white-700 dark:text-gray-400">
-              Responsive HTML/CSS layout for online store of designer furniture.
-              HTML5, CSS3 (SCSS)
+              Collaborated closely with design and backend teams to ensure
+              seamless integration of user interface components and optimal user
+              experience.
             </p>
             <button
               type="button"
               class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
-              Live preview
+              <a
+                class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+                href="https://www.mantralabsglobal.com/"
+              >
+                Live preview
+              </a>
             </button>
           </div>
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
-            <img
-              src={Mobile}
-              alt="Selected"
-              className="w-600 h-72"
-            />
+            <img src={Mobile} alt="Selected" className="w-600 h-72" />
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-              Landing page for front-end developer
+              Mantra Labs Mobile Application Page
             </h2>
             <p className="mb-3 font-normal text-white-700 dark:text-gray-400">
-              Responsive HTML/CSS layout for landing page for front-end
-              developer. HTML5, CSS3 (SCSS)
+              Implemented responsive design principles to ensure cross-platform
+              compatibility and accessibility acrossvarious devices and screen
+              sizes.
             </p>
             <button
               type="button"
               class="text-white bg-gradient-to-r from-cyan-500 to-blue-500  focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
-              Live preview
+              <a
+                class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+                href="https://www.mantralabsglobal.com/"
+              >
+                Live preview
+              </a>
             </button>
           </div>
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
-            <img
-              src={Ageas}
-              alt="Selected"
-              className=" w-600 h-72"
-            />
+            <img src={Ageas} alt="Selected" className=" w-600 h-72" />
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-              Website redesign for The Venus project
+              Mantra Labs Ageas Federal Page
             </h2>
             <p className="mb-3 font-normal text-White-700 dark:text-gray-400">
-              Responsive HTML/CSS layout for The Venus project. HTML5, CSS3
-              (SCSS)
+              Utilized advanced CSS techniques and libraries to create visually
+              appealing and user-friendly interfaces, enhancing brand identity
+              and user engagement.
             </p>
             <button
               type="button"
               class="text-white bg-gradient-to-r from-cyan-500 to-blue-500  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
-              Live preview
+              <a
+                class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+                href="https://www.mantralabsglobal.com/"
+              >
+                Live preview
+              </a>
             </button>
           </div>
         </div>
@@ -149,73 +208,105 @@ export default function App() {
           <h1 className="text-4xl font-extrabold dark:text-white">
             Technologies
           </h1>
-          <div className="my-2">
-            <p className="my-1">HTML</p>
-            <p className="my-1">CSS</p>
-            <p className="my-1">Javascript</p>
-            <p className="my-1">Jquery</p>
-            <p className="my-1">React.js</p>
-            <p className="my-1">Wordpress</p>
+          <div className="py-10">
+            <div className="mb-4">
+              <h3 className="text-lg">Html</h3>
+              <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                <div
+                  className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
+                  style={{ width: "100%" }}
+                ></div>
+              </div>
+              <span className="text-sm">Advanced</span>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg">CSS & Bootstrap</h3>
+              <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                <div
+                  className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
+                  style={{ width: "100%" }}
+                ></div>
+              </div>
+              <span className="text-sm">Advanced</span>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg">JavaScript, JQuery</h3>
+              <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                <div
+                  className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
+                  style={{ width: "100%" }}
+                ></div>
+              </div>
+              <span className="text-sm">Advanced</span>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg">React.Js</h3>
+              <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                <div
+                  className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
+                  style={{ width: "60%" }}
+                ></div>
+              </div>
+              <span className="text-sm">Regular</span>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg">Python Basic</h3>
+              <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                <div
+                  className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
+                  style={{ width: "30%" }}
+                ></div>
+              </div>
+              <span className="text-sm">Beginner</span>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg">Dyango Rest-Framework</h3>
+              <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                <div
+                  className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
+                  style={{ width: "30%" }}
+                ></div>
+              </div>
+              <span className="text-sm">Beginner</span>
+            </div>
           </div>
         </div>
-        <h1 className="text-4xl font-extrabold dark:text-white my-2">
+        <h1 className="text-4xl font-extrabold dark:text-white mb-4">
           Additional technologies and skills
         </h1>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="my-1">Python</div>
-          <div className="my-1">Git</div>
-          <div className="my-1">Teamwork</div>
-          <div className="my-1">Quick learning</div>
+        <div className="bg-black-900 text-white">
+          <div className="grid grid-cols-3 gap-4">
+            {skills.map((skill, index) => (
+              <div key={index} className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full"></div>
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
-
-        <h1 className="text-4xl font-extrabold dark:text-white">
-          Additional technologies and skills
+        <h1 className="text-4xl font-extrabold dark:text-white my-4">
+          About me
         </h1>
-        <div className="flex justify-between items-center gap-2 w-[100%]">
-          <div classNmae="w-[30%]">
-            <h1 className="text-4xl font-extrabold dark:text-white  my-2">
-              2012
-            </h1>
-            <p className="my-1">
-              Graduated KTC (Krasnodar Technical College) and for about two
-              years worked with high voltage (35, 110kV) substations as the
-              specialty electrician of emergency mobile crew. Later qualified as
-              a Crossfit trainer.Graduated KTC (Krasnodar Technical College) and
-              for about two years worked with high voltage (35, 110kV)
-              substations as the specialty electrician of emergency mobile crew.
-              Later qualified as a Crossfit trainer.
-            </p>
-          </div>
-          <div classNmae="w-[30%]">
-            <h1 className="text-4xl font-extrabold dark:text-white my-2">
-              2015
-            </h1>
-            <p className="my-1">
-              Graduated KTC (Krasnodar Technical College) and for about two
-              years worked with high voltage (35, 110kV) substations as the
-              specialty electrician of emergency mobile crew. Later qualified as
-              a Crossfit trainer.Graduated KTC (Krasnodar Technical College) and
-              for about two years worked with high voltage (35, 110kV)
-              substations as the specialty electrician of emergency mobile crew.
-              Later qualified as a Crossfit trainer.
-            </p>
-          </div>
-          <div classNmae="w-[30%]">
-            <h1 className="text-4xl font-extrabold dark:text-white my-2">
-              20216-2021
-            </h1>
-            <p className="my-1">
-              Graduated KTC (Krasnodar Technical College) and for about two
-              years worked with high voltage (35, 110kV) substations as the
-              specialty electrician of emergency mobile crew. Later qualified as
-              a Crossfit trainer.Graduated KTC (Krasnodar Technical College) and
-              for about two years worked with high voltage (35, 110kV)
-              substations as the specialty electrician of emergency mobile crew.
-              Later qualified as a Crossfit trainer.
-            </p>
+        <div className="bg-black-900 text-white">
+          <div className="relative">
+            <div
+              className="absolute w-full h-0.5 bg-gray-700 top-1/2 transform -translate-y-1/2 "
+              style={{ top: "36px", height: "5px" }}
+            ></div>
+            <div className="flex justify-between items-start relative">
+              {events.map((event, index) => (
+                <div key={index} className="flex flex-col justify-start ">
+                  <h4 className="text-lg font-bold">{event.year}</h4>
+                  <div className="w-4 h-4 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full"></div>
+                  <div className="mt-2">
+                    <p className="mt-2 max-w-xs">{event.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="flex justify-between items-center my-2">
+        {/* <div className="flex justify-between items-center my-2">
           <div>Free to contact me</div>
           <div>chauhannitesh19@gmail.com</div>
           <div
@@ -225,7 +316,30 @@ export default function App() {
             <img src={facebook} alt="Selected" className="w-5 h-5 " />
             <img src={linkedin} alt="Selected" className="w-5 h-5 " />
           </div>
-        </div>
+        </div> */}
+        <footer className="bg-black-900 text-white py-4">
+          <div className="container mx-auto flex justify-start gap-8 items-center my-2">
+            <div className="text-blue-500">Feel free to contact me</div>
+            <div>chauhannitesh19@gmail.com</div>
+            <div
+              className="flex justify-around items-center"
+              style={{ width: "6%" }}
+            >
+              <a
+                class="font-medium text-blue-600 hover:underline"
+                href="https://www.linkedin.com/in/nitesh-kumar-chauhan-8a92941b2/"
+              >
+                <img src={linkedin} alt="Facebook" className="w-5 h-5" />
+              </a>
+              <a
+                class="font-medium text-blue-600 hover:underline"
+                href="https://www.facebook.com/nitesh.chauhan.3517"
+              >
+                <img src={facebook} alt="Facebook" className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );

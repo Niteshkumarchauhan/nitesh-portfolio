@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         'regal-blue': 'rgba(19, 173, 199, 1) rgba(105, 120, 209, 1) rgba(148, 93, 214, 1)',
+        'secundry': 'rgba(19, 173, 199, 1) rgba(105, 120, 209, 1) rgba(148, 93, 214, 1)'
+
       },
       width: {
         '128': '570px',
