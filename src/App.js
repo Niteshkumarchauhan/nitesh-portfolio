@@ -55,9 +55,11 @@ export default function App() {
             className="flex justify-around items-center"
             style={{ width: "50%" }}
           >
-            <p className="text-1xl my-3">Project</p>
-            <p className="text-1xl my-3">Technologies</p>
-            <p className="text-1xl my-3">About Me</p>
+            <a href="#projetcAndExperiace">
+              <p className="text-1xl my-3">Project</p>
+            </a>
+            <a href="#technologies"><p className="text-1xl my-3">Technologies</p></a>
+            <a href="#additionSkilss"><p className="text-1xl my-3">About Me</p></a> 
           </div>
           <div
             className="flex justify-around item-center my-3"
@@ -110,9 +112,9 @@ export default function App() {
             />
           </div>
         </div>
-        <h1 className="text-4xl font-extrabold dark:text-white mb-8">
-          Projects (1.5 Years Experiance)
-        </h1>
+          <h1 className="text-4xl font-extrabold dark:text-white mb-8" id="projetcAndExperiace">
+            Projects (1.5 Years Experiance)
+          </h1>
         <div className="grid grid-cols-2 gap-4 place-items-center my-20">
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
             <img src={LandingPage} alt="Selected" className="w-600 h-72" />
@@ -205,7 +207,7 @@ export default function App() {
           </div>
         </div>
         <div>
-          <h1 className="text-4xl font-extrabold dark:text-white">
+          <h1 className="text-4xl font-extrabold dark:text-white" id="technologies">
             Technologies
           </h1>
           <div className="py-10">
@@ -274,7 +276,7 @@ export default function App() {
         <h1 className="text-4xl font-extrabold dark:text-white mb-4">
           Additional technologies and skills
         </h1>
-        <div className="bg-black-900 text-white">
+        <div className="bg-black-900 text-white" id="additionSkilss">
           <div className="grid grid-cols-3 gap-4">
             {skills.map((skill, index) => (
               <div key={index} className="flex items-center space-x-2">
