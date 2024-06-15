@@ -29,7 +29,7 @@ export default function App() {
         "Completed my hight school S.D.S. Inter college, varanasi. My specialization is Science",
     },
     {
-      year: "201",
+      year: "2015",
       description:
         "Completed my hight school S.B.S. Inter college, varanasi. My specialization is Mathematics.",
     },
