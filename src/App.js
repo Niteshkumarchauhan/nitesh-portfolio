@@ -18,6 +18,10 @@ export default function App() {
     { name: "Git" },
     { name: "Wordpress" },
     { name: "GitHub" },
+    { name: "Tailwind" },
+    { name: "Bootstrap" },
+    { name: "MaterialUI" },
+    { name: "ChakraUI" },
   ];
   const events = [
     {
@@ -219,7 +223,7 @@ export default function App() {
               <span className="text-sm">Advanced</span>
             </div>
             <div className="mb-4">
-              <h3 className="text-lg">CSS & Bootstrap</h3>
+              <h3 className="text-lg">CSS</h3>
               <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
                 <div
                   className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
@@ -229,7 +233,17 @@ export default function App() {
               <span className="text-sm">Advanced</span>
             </div>
             <div className="mb-4">
-              <h3 className="text-lg">JavaScript, JQuery</h3>
+              <h3 className="text-lg">JavaScript</h3>
+              <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                <div
+                  className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
+                  style={{ width: "100%" }}
+                ></div>
+              </div>
+              <span className="text-sm">Advanced</span>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg">JQuery</h3>
               <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
                 <div
                   className="bg-gradient-to-r from-purple-400 to-blue-500 h-2.5 rounded-full"
