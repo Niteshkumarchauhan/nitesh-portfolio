@@ -134,7 +134,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/technology-consulting-and-development/"
+                href="https://www.mantralabsglobal.com/"
               >
                 Live preview
               </a>
@@ -156,7 +156,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/services/mobile-application-development/"
+                href="https://www.mantralabsglobal.com/technology-consulting-and-development/"
               >
                 Live preview
               </a>
@@ -178,7 +178,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/services/experience-strategy-consulting/case-study-ageas-federal/"
+                href="https://www.mantralabsglobal.com/services/mobile-application-development/"
               >
                 Live preview
               </a>
@@ -200,7 +200,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/"
+                href="https://www.mantralabsglobal.com/services/experience-strategy-consulting/case-study-ageas-federal/"
               >
                 Live preview
               </a>
