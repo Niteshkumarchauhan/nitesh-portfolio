@@ -305,17 +305,6 @@ export default function App() {
             </div>
           </div>
         </div>
-        {/* <div className="flex justify-between items-center my-2">
-          <div>Free to contact me</div>
-          <div>chauhannitesh19@gmail.com</div>
-          <div
-            className="flex justify-around item-center "
-            style={{ width: "10%" }}
-          >
-            <img src={facebook} alt="Selected" className="w-5 h-5 " />
-            <img src={linkedin} alt="Selected" className="w-5 h-5 " />
-          </div>
-        </div> */}
         <footer className="bg-black-900 text-white py-4">
           <div className="container mx-auto flex justify-start gap-8 items-center my-2">
             <div className="text-blue-500">Feel free to contact me</div>
