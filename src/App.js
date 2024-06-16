@@ -16,10 +16,7 @@ export default function App() {
   };
   const skills = [
     { name: "Git" },
-    { name: "Quick learning" },
-    { name: "Punctual" },
     { name: "Wordpress" },
-    { name: "Teamwork" },
     { name: "GitHub" },
   ];
   const events = [
@@ -49,7 +46,7 @@ export default function App() {
       <div className="m-auto text-white" style={{ width: "80%" }}>
         <div className="flex justify-around items-center">
           <div style={{ width: "40%" }}>
-            <h1 className="text-3xl my-3">I'm Nitesh</h1>
+            <h1 className="text-3xl my-3">Nitesh Kumar Chauhan</h1>
           </div>
           <div
             className="flex justify-around items-center"
@@ -82,7 +79,7 @@ export default function App() {
         <div className="flex justify-between my-32">
           <div>
             <h2 className="text-4xl font-extrabold dark:text-white mt-10 mb-0">
-              Hello, I'm Nitesh,
+              Hello, I'm Nitesh Kumar Chauhan,
             </h2>
             <h2 className="text-4xl font-extrabold dark:text-white m-0">
               frontend developer
@@ -133,7 +130,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/"
+                href="https://www.mantralabsglobal.com/technology-consulting-and-development/"
               >
                 Live preview
               </a>
@@ -155,7 +152,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/"
+                href="https://www.mantralabsglobal.com/services/mobile-application-development/"
               >
                 Live preview
               </a>
@@ -177,7 +174,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/"
+                href="https://www.mantralabsglobal.com/services/experience-strategy-consulting/case-study-ageas-federal/"
               >
                 Live preview
               </a>
