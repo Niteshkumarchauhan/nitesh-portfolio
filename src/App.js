@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import niteshLogo from "./images/niteshlogo.png"
 import facebook from "./images/Facebook.png";
 import linkedin from "./images/Linkedin.png";
@@ -7,6 +7,8 @@ import LandingPage from "./images/landingpage.png";
 import Technology from "./images/technology.png";
 import Mobile from "./images/mobile.png";
 import Ageas from "./images/ageas.png";
+// import axios from 'axios';
+
 export default function App() {
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -45,6 +47,33 @@ export default function App() {
         "Worked out in which field I want to build a developer's career and started to learn Frontend Development.",
     },
   ];
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      console.log('Form submitted successfully');
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
   return (
     <div className=" bg-black" style={{ width: "100%" }}>
       <div className="m-auto text-white" style={{ width: "80%" }}>
@@ -59,8 +88,12 @@ export default function App() {
             <a href="#projetcAndExperiace">
               <p className="text-1xl my-3">Project</p>
             </a>
-            <a href="#technologies"><p className="text-1xl my-3">Technologies</p></a>
-            <a href="#additionSkilss"><p className="text-1xl my-3">About Me</p></a> 
+            <a href="#technologies">
+              <p className="text-1xl my-3">Technologies</p>
+            </a>
+            <a href="#additionSkilss">
+              <p className="text-1xl my-3">About Me</p>
+            </a>
           </div>
           <div
             className="flex justify-around item-center my-3"
@@ -113,9 +146,12 @@ export default function App() {
             />
           </div>
         </div>
-          <h1 className="text-4xl font-extrabold dark:text-white mb-8" id="projetcAndExperiace">
-            Projects (1.5 Years Experiance)
-          </h1>
+        <h1
+          className="text-4xl font-extrabold dark:text-white mb-8"
+          id="projetcAndExperiace"
+        >
+          Projects (1.5 Years Experiance)
+        </h1>
         <div className="grid grid-cols-2 gap-4 place-items-center my-20">
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
             <img src={LandingPage} alt="Selected" className="w-600 h-72" />
@@ -208,7 +244,10 @@ export default function App() {
           </div>
         </div>
         <div>
-          <h1 className="text-4xl font-extrabold dark:text-white" id="technologies">
+          <h1
+            className="text-4xl font-extrabold dark:text-white"
+            id="technologies"
+          >
             Technologies
           </h1>
           <div className="py-10">
@@ -297,6 +336,62 @@ export default function App() {
             ))}
           </div>
         </div>
+        <h1 className="text-4xl font-extrabold dark:text-white my-4">
+          Connect With Me
+        </h1>
+        <div className="flex justify-center bg-black">
+  <form className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md" onSubmit={handleSubmit}>
+    <div className="mb-4">
+      <label className="block text-white mb-2" htmlFor="name">
+        Your Name
+      </label>
+      <input
+        className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-gray-500"
+        type="text"
+        id="name"
+        value={formData.name}
+        onChange={handleChange}
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block text-white mb-2" htmlFor="email">
+        Your Email
+      </label>
+      <input
+        className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-gray-500"
+        type="email"
+        id="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div className="mb-6">
+      <label className="block text-white mb-2" htmlFor="message">
+        Write your message here
+      </label>
+      <textarea
+        className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-gray-500"
+        id="message"
+        value={formData.message}
+        onChange={handleChange}
+        placeholder="Enter your message"
+        rows="4"
+        required
+      />
+    </div>
+    <button
+      className="w-full py-2 rounded bg-gradient-to-r from-pink-500 to-orange-500 text-white font-semibold focus:outline-none hover:from-pink-600 hover:to-orange-600"
+      type="submit"
+    >
+      Submit now
+    </button>
+  </form>
+</div>
+
         <h1 className="text-4xl font-extrabold dark:text-white my-4">
           About me
         </h1>
