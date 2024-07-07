@@ -193,7 +193,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/technology-consulting-and-development/"
+                href="https://weather-app-made-by-nitesh.netlify.app/"
               >
                 Live preview
               </a>
@@ -217,7 +217,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/services/mobile-application-development/"
+                href="https://quiz-app-made-by-nitesh.netlify.app/"
               >
                 Live preview
               </a>
@@ -241,7 +241,7 @@ export default function App() {
             >
               <a
                 class="font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500"
-                href="https://www.mantralabsglobal.com/services/experience-strategy-consulting/case-study-ageas-federal/"
+                href="https://to-do-list-made-by-nitesh.netlify.app/"
               >
                 Live preview
               </a>
