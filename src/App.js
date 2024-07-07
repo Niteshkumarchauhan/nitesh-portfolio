@@ -179,12 +179,13 @@ export default function App() {
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
             <img src={Technology} alt="Selected" className="w-600 h-72" />
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-              Mantra Labs Technology page
+              Live Weather App page
             </h2>
             <p className="mb-3 font-normal text-white-700 dark:text-gray-400">
-              Collaborated closely with design and backend teams to ensure
-              seamless integration of user interface components and optimal user
-              experience.
+              WeatherApp, built with Tailwind CSS and ReactJS, offers accurate
+              forecasts and real-time updates in a sleek, responsive design.
+              Access temperature, humidity, and more effortlessly. Stay prepared
+              with WeatherApp!
             </p>
             <button
               type="button"
@@ -201,12 +202,14 @@ export default function App() {
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
             <img src={Mobile} alt="Selected" className="w-600 h-72" />
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-              Mantra Labs Mobile Application Page
+              Sample Quiz App Page
             </h2>
             <p className="mb-3 font-normal text-white-700 dark:text-gray-400">
-              Implemented responsive design principles to ensure cross-platform
-              compatibility and accessibility acrossvarious devices and screen
-              sizes.
+              QuizApp is a fun and engaging quiz app built with HTML, CSS, and
+              JavaScript. It features a clean, responsive design and an
+              intuitive interface. Test your knowledge with a variety of
+              questions and get immediate feedback. Enjoy learning and
+              challenging yourself with QuizApp!
             </p>
             <button
               type="button"
@@ -223,12 +226,14 @@ export default function App() {
           <div className=" p-6 bg-black border border-regal-blue rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-128 h-62">
             <img src={Ageas} alt="Selected" className=" w-600 h-72" />
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-white-900 dark:text-white">
-              Mantra Labs Ageas Federal Page
+              TO-DO List Page
             </h2>
             <p className="mb-3 font-normal text-White-700 dark:text-gray-400">
-              Utilized advanced CSS techniques and libraries to create visually
-              appealing and user-friendly interfaces, enhancing brand identity
-              and user engagement.
+              TaskMaster is a simple and efficient to-do list app built with
+              HTML, CSS, and JavaScript. It offers a clean, intuitive interface
+              for managing your tasks. Easily add, edit, and delete tasks to
+              stay organized. Track your progress and boost productivity with
+              TaskMaster!
             </p>
             <button
               type="button"
